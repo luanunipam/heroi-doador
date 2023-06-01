@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Herói Doador</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        #gradient-horizontal {
+            --color-stop-1: #9340ffee;
+            --color-stop-2: #ff3c5fdd;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid py-2 border-bottom">
+        <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+            <div class="container">
+                <img class="navbar-brand img-fluid" width="200" src="img/logo.png">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 px-1" id="menu">
+                            <li class="nav-item"><a href="index.html"
+                                    class="nav-link text-primary fw-medium btn btn-outline-primary mx-1 rounded-pill px-3">Home</a>
+                            </li>
+                            <li class="nav-item"><a href="doacao.html"
+                                    class="nav-link text-primary fw-medium btn btn-doacao btn-outline-primary mx-1 rounded-pill px-3">Quero
+                                    Doar!</a>
+                            </li>
+                            <li class="nav-item"><a href="sobre.html"
+                                    class="nav-link text-primary fw-medium btn btn-outline-primary mx-1 rounded-pill px-3">Sobre</a>
+                            </li>
+                            <li class="nav-item"><a href="tranparencia.html"
+                                    class="nav-link text-primary btn fw-medium btn-outline-primary mx-1 rounded-pill px-3">Transparência</a>
+                            </li>
+                            <li class="nav-item"><a href="contato.html"
+                                    class="nav-link text-primary fw-medium btn btn-outline-primary mx-1 rounded-pill px-3">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-4 text-center">
+        <h1 class="display-4 fw-bold text-primary">AJUDE!</h1>
+        <h2 class="display-4 fw-medium text-primary">SUA DOAÇÃO<br>VALE MUITO</h2>
+        <img src="img/doacao.png" class="img-fluid mx-auto d-block">
+        <a href="doacao.html" class="text-primary btn btn-outline-primary rounded-4 btn-ajuda mt-2">QUERO AJUDAR!</a>
+
+        <hr class="featurette-divider my-5">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="url(#gradient-horizontal)"
+                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                    <linearGradient id="gradient-horizontal">
+                        <stop offset="0%" stop-color="var(--color-stop-1)" />
+                        <stop offset="100%" stop-color="var(--color-stop-2)" />
+                    </linearGradient>
+                    <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982Z" />
+                    <path
+                        d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5Zm0 1H7.5v3h-6l2.25-3ZM8.5 4V1h3.75l2.25 3h-6ZM15 5v10H1V5h14Z" />
+                </svg>
+                <h2 class="info-doacao mt-3">100+ doações</h2>
+            </div>
+            <div class="col-lg-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="url(#gradient-horizontal)"
+                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                    <linearGradient id="gradient-horizontal">
+                        <stop offset="0%" stop-color="var(--color-stop-1)" />
+                        <stop offset="100%" stop-color="var(--color-stop-2)" />
+                    </linearGradient>
+                    <path
+                        d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z" />
+                </svg>
+                <h2 class="info-doacao mt-3">12 instituições</h2>
+            </div>
+            <div class="col-lg-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="url(#gradient-horizontal)"
+                    class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                    <linearGradient id="gradient-horizontal">
+                        <stop offset="0%" stop-color="var(--color-stop-1)" />
+                        <stop offset="100%" stop-color="var(--color-stop-2)" />
+                    </linearGradient>
+                    <path
+                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                    <path
+                        d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                </svg>
+                <h2 class="info-doacao mt-3">75 dias</h2>
+            </div>
+        </div>
+
+        <hr class="featurette-divider my-5">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-touch="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>1 A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                    <img src="img/iconPessoa.png" width="150" height="150"
+                        class="img-fluid border rounded-circle px-2 py-2">
+                </div>
+                <div class="carousel-item">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>2 A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                    <img src="img/iconPessoa.png" width="150" height="150"
+                        class="img-fluid border rounded-circle px-2 py-2">
+                </div>
+                <div class="carousel-item">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>3 A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                    <img src="img/iconPessoa.png" width="150" height="150"
+                        class="img-fluid border rounded-circle px-2 py-2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <footer class="py-3 mt-3 bg-primary">
+        <p class="text-center text-white">O OBJETIVO DO HERÓI DOADOR E AJUDAR INSTITUIÇÕES, PESSOAS QUE
+            NECESSITAM DE TRATAMENTOS ESPECIAIS E FÁMILIAS
+            CARENTES DE PATOS DE MINAS E ALGUMAS CIDADES DA REGIÃO.</p>
+        <h4 class="text-center text-white">"Praticar a solidariedade é uma forma de amor que não tem preço"
+        </h4>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+#menu li a {
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color) !important;
+}
+
+#menu li a:hover {
+    color: var(--bs-btn-hover-color) !important;
+}
+
+:root {
+    --primary: #aa1945;
+    --primary2: #91143a;
+    --primary3: #740f2d;
+    --primary4: #680e29;
+}
+
+.bg-primary,
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--primary2);
+    --bs-btn-hover-border-color: var(--primary3);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary3);
+    --bs-btn-active-border-color: var(--primary4);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--primary);
+    --bs-btn-disabled-border-color: var(--primary);
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(170, 25, 69, 1) !important;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(170, 25, 69, 1) !important;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--primary2);
+    --bs-btn-hover-border-color: var(--primary3);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary3);
+    --bs-btn-active-border-color: var(--primary4);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--primary);
+    --bs-btn-disabled-border-color: var(--primary);
+    --bs-gradient: none;
+    --bs-btn-bg: rgba(170, 25, 69, 0.15) !important;
+}
+
+.btn-ajuda:hover {
+    color: #fff !important;
+}
+
+.btn-ajuda {
+    font-weight: 500;
+    font-size: clamp(0.3em, 1em + 1vw, 1.5em) !important;
+}
+
+.btn-doacao:hover {
+    background: linear-gradient(90deg, #9340ffee 0%, #ff3c5fdd 90%);
+}
+
+.card-header {
+    padding: 0 !important;
+}
+
+.link-titulo:hover {
+    text-decoration: overline !important;
+}
+
+.info-doacao {
+    background: -webkit-linear-gradient(90deg, #9340ffee, #ff3c5fdd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
