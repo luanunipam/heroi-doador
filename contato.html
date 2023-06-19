@@ -53,7 +53,7 @@
         </nav>
     </header>
 
-    <div class="container py-4 text-center">
+    <div class="container py-4 text-center h-100">
         <h2 class="fs-1 text-primary text-ajuda">Contato</h2> <br>
         <p class="text-center fs-3">Para entrar em contato com o PCENTER,
             nosso grupo dedicado a causas sociais,
@@ -65,15 +65,64 @@
         <br>
         <br>
         <img src="img/logoMaior.png" class="img-fluid" width="400" alt="Logo PCENTER">
+
+        <br>
+        <br>
+        <br>
+        <div class="container row py-4 text-start">
+            <div class="col-3"></div>
+            <div class="col border p-4">
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="name">Nome</label>
+                        <input class="form-control" id="name" type="text" placeholder="Nome" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="emailAddress">E-mail</label>
+                        <input class="form-control" id="emailAddress" type="email" placeholder="E-mail" required/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="message">Mensagem</label>
+                        <textarea class="form-control" id="message" type="text" placeholder="Mensagem"
+                            style="height: 10rem;" required></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3"></div>
+        </div>
     </div>
 
-    <footer class="py-3 my-4 bg-primary d-flex align-items-center justify-content-center">
+    <footer class="py-3 mt-4 bg-primary d-flex align-items-center justify-content-center">
         <img src="img/doacaoMenor.png" width="90" class="img-fluid mx-5">
         <h4 class="text-center text-white">"Praticar a solidariedade é uma forma de amor que não tem preço"
         </h4>
         <img src="img/doacaoMenor.png" width="90" class="img-fluid mx-5">
     </footer>
 
+    <script>
+        (() => {
+            'use strict'
+          
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+          
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+              form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+          
+                form.classList.add('was-validated')
+              }, false)
+            })
+          })()
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
